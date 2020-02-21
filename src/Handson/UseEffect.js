@@ -7,10 +7,10 @@ export default function UseEffect() {
     console.log("Component Did Mount");
   }, []);
   useEffect(() => {
-    console.log("Component Will Update");
+    return console.log("Component will Unmount");
   });
   useEffect(() => {
-    return console.log("Component Did Unmount");
+    console.log("Component Will Update");
   });
 
   const fun = () => {
